@@ -33,7 +33,7 @@ class MyThread implements Runnable{
         System.out.println(name+" has locked the count variable");
         lock.lock();
         MyShared.count.incrementAndGet();
-        System.out.println(name+" : "+Shared.count);
+        System.out.println(name+" : "+MyShared.count);
         System.out.println(name+" is releasing the count variable");
         System.out.println("Finished....."+name);
         lock.unlock();
